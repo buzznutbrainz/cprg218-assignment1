@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 768px) { 
+    /* logo and company name on separate lines : change header displa 
+    al content should be in one column : change body display
+    puffin image is centered horizontally (align) taking up 100% of width of page*/
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    /* logo and name same line
+    puffin img displayed at smaller size max 300px
+    puffin img and caption are displayed beside each other
+    sidebar appears at bottom of page taking up 100% of horizontal width*/
+}
+
+@media screen and (min-width: 1000px) {
+    /* 3 column layout with sidebar on the right*/
+}
