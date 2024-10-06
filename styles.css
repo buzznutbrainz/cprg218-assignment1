@@ -1,12 +1,54 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #120323;
+    color: #97bf04;
+
+}
+
+main {
+    color: #120323;
+    
+}
+
+main img {
+    border: 5px solid #d9043d
+}
+
+aside {
+    background-color: #97bf04;
+}
+
+footer{
+    background-color: #d9043d;
 }
 
 
 @media screen and (max-width: 768px) { 
-    /* logo and company name on separate lines : change header displa 
+    /* logo and company name on separate lines (display: block: change header displa 
     al content should be in one column : change body display
-    puffin image is centered horizontally (align) taking up 100% of width of page*/
+    puffin image is centered horizontally (display flex: justify-content) (align) taking up 100% of width of page*/
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+header {
+    display: block; 
+    align-items: center;
+}
+
+main img{
+    justify-content: center;
+    width: 100vw;
+}
 
 }
 
@@ -16,8 +58,32 @@
     puffin img displayed at smaller size max 300px
     puffin img and caption are displayed beside each other
     sidebar appears at bottom of page taking up 100% of horizontal width*/
+
+header {
+    display: inline;
+}
+
+main img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    display: inline;
+}
+
 }
 
 @media screen and (min-width: 1000px) {
+    
+body {
+        display: flex;
+        flex-basis: 33.33%;
+    }
+
+aside {
+    
+}
     /* 3 column layout with sidebar on the right*/
 }
