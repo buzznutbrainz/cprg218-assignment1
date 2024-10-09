@@ -7,6 +7,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     background-color: #120323;
     color: #97bf04;
 }
@@ -72,7 +73,15 @@ figcaption {
     puffin img and caption are displayed beside each other
     sidebar appears at bottom of page taking up 100% of horizontal width*/
 
+header { 
+    flex-wrap: nowrap;
+    margin-bottom: 3%;
+}
 
+main{ 
+    display: flex;
+
+}
 main img {
     width: 100%;
     height: auto;
@@ -87,20 +96,24 @@ figure {
 
 @media screen and (min-width: 1000px) {
 
+/* 3 column layout with sidebar on the right*/
 
 main{
     display: flex;
+    flex-direction: column;
 }
 
 figure {
-    display: inline-block;
+    display: flex;
+    column-gap: 20px;
 }
 
 aside {
-
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 footer {
     
-    /* 3 column layout with sidebar on the right*/
+    
 }
