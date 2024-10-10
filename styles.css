@@ -15,7 +15,7 @@ header {
 
 main {
     display: flex;
-    flex: 1;
+    flex-direction: column;
     color: #120323;
     justify-content: center;
 }
@@ -48,7 +48,8 @@ footer{
     puffin image is centered horizontally (display flex: justify-content) (align) taking up 100% of width of page*/
 
 body {
-    display: inline;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -58,14 +59,14 @@ header {
     align-items: center;
     justify-content: center;
     height: auto;
+    padding-top: 10px;
     padding-bottom: 5px;
     margin-bottom: 3%;
 }
 
-main img {
-}
 
 figcaption { 
+    display: block;
     justify-content: center;
     padding: 20px;
 }
@@ -100,9 +101,10 @@ figure {
 
 /* 3 column layout with sidebar on the right*/
 
-main{
+.container {
     display: flex;
     flex-direction: row;
+
 }
 
 figure {
@@ -114,9 +116,9 @@ figure {
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    flex: 1;
 }
 
+
 footer {
+    padding: 35px;
 }
