@@ -28,7 +28,6 @@ main img {
 figure {
     display: flex;
     flex-direction: row;
-
 }
 
 aside {
@@ -87,6 +86,7 @@ figcaption {
 
 header { 
     flex-wrap: nowrap;
+    padding: 20px;
     margin-bottom: 3%;
 }
 
@@ -109,6 +109,10 @@ figure {
 
 /* 3 column layout with sidebar on the right*/
 
+header {
+    padding: 35px;
+    margin-bottom: 1.5%;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -126,7 +130,6 @@ aside {
     justify-content: flex-end;
     
 }
-
 
 footer {
     padding: 35px;
