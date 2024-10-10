@@ -7,12 +7,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100vw;
     background-color: #120323;
     color: #97bf04;
 }
 
 main {
+    display: flex;
+    flex: 1;
     color: #120323;
     justify-content: center;
 }
@@ -43,8 +46,13 @@ footer{
     /*
     al content should be in one column : change body display
     puffin image is centered horizontally (display flex: justify-content) (align) taking up 100% of width of page*/
-    
-    
+
+body {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
     display: block; 
     align-items: center;
@@ -55,9 +63,6 @@ header {
 }
 
 main img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 figcaption { 
@@ -68,10 +73,6 @@ figcaption {
 
 
 @media screen and (max-width: 1000px) {
-    /* logo and name same line
-    puffin img displayed at smaller size max 300px
-    puffin img and caption are displayed beside each other
-    sidebar appears at bottom of page taking up 100% of horizontal width*/
 
 header { 
     flex-wrap: nowrap;
@@ -80,8 +81,8 @@ header {
 
 main{ 
     display: flex;
-
 }
+
 main img {
     width: 100%;
     height: auto;
@@ -89,7 +90,8 @@ main img {
 }
 
 figure {
-    display: inline;
+    display: flex;
+    column-gap: 20px;
 }
 
 }
@@ -100,20 +102,21 @@ figure {
 
 main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 figure {
     display: flex;
     column-gap: 20px;
+    flex: 2;
 }
 
 aside {
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex: 1;
 }
 
 footer {
-    
-    
 }
