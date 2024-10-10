@@ -44,12 +44,13 @@ footer{
 
 @media screen and (max-width: 768px) { 
     /*
-    al content should be in one column : change body display
+    all content should be in one column : change body display?
     puffin image is centered horizontally (display flex: justify-content) (align) taking up 100% of width of page*/
 
 body {
     display: flex;
     flex-direction: column;
+    flex: 1;
     align-items: center;
     justify-content: center;
 }
@@ -104,7 +105,6 @@ figure {
 .container {
     display: flex;
     flex-direction: row;
-
 }
 
 figure {
